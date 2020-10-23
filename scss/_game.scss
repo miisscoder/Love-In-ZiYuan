@@ -1,0 +1,130 @@
+﻿body.game {
+    background-color: #b497af;
+    height: 100vh;
+    overflow: hidden;
+
+    .header {
+        width: 100%;
+        height: auto;
+        margin: 0;
+
+        img {
+            width: 17%;
+            margin-right: 2rem;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+    .form {
+        width: 100%;
+        height: auto;
+        background: url(../image/game-bk.png) no-repeat 0 0;
+        background-size: 100% auto;
+        background-position: bottom;
+
+        .title {
+            color: #ffffff;
+            font-size: 2rem;
+            padding-left: 1rem;
+            padding-top: 2rem;
+            padding-bottom: 1rem;
+            width: 70%;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .image {
+            border: 1.5px solid #f8755b;
+            width: 80%;
+            margin: 0 auto;
+            position: relative;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+            .puzzle {
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                opacity: 0;
+
+
+                .piece {
+                    height: calc(100% / 3 - 1px * 2);
+                    text-align: center;
+                    border: 1px solid #f8755b;
+                    background-color: #ffffff;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: #f8755b;
+                    font-size: 2rem;
+
+
+                    &.out {
+                        opacity: 0;
+                        animation: zoomOut 1s 1 ease;
+
+                        @-webkit-keyframes zoomOut {
+                            0% {
+                                opacity: 1;
+                            }
+
+                            50% {
+                                opacity: 1;
+                                -webkit-transform: rotateY(90deg);
+                                transform: rotateY(90deg);
+                            }
+
+                            to {
+                                opacity: 0;
+                            }
+                        }
+
+                        @keyframes zoomOut {
+                            0% {
+                                opacity: 1;
+                            }
+
+                            50% {
+                                opacity: 1;
+                                -webkit-transform: rotateY(90deg);
+                                transform: rotateY(90deg);
+                            }
+
+                            to {
+                                opacity: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .btns {
+            padding-bottom: 3.2rem;
+            width: 70%;
+            margin: 0 auto;
+            padding-top: 2rem;
+
+            .btn-scan {
+                display: block;
+                text-decoration: none;
+                background-color: #ffffff;
+                width: 45%;
+                margin: 0 auto;
+                height: 2rem;
+                line-height: 2rem;
+                border-radius: 0.5rem;
+                color: #f8755b;
+                text-align: center;
+                margin: 0 auto;
+            }
+        }
+    }
+}

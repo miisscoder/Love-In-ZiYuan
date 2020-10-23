@@ -1,0 +1,66 @@
+﻿body.character {
+    background: url(../image/bk-character.jpg) no-repeat 0 0;
+    background-position: center;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+    .header {
+        width: 100%;
+
+        .slogan {
+            width: 28%;
+            margin-left: 2rem;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .logo {
+            width: 17%;
+            margin-right: 2rem;
+        }
+    }
+
+    .form {
+        width: 100%;
+        text-align: center;
+        background: url(../image/form-bk-character.png) no-repeat 0 0;
+        background-position: center;
+        background-size: 100% 100%;
+
+        img {
+            width: 60%;
+            height: auto;
+            border-radius: 1rem;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .form-top {
+            color: #ffffff;
+            font-size: 2rem;
+            padding-bottom: 2rem;
+        }
+
+        .image {
+            position: relative;
+
+            .name {
+                position: absolute;
+                bottom: 1rem;
+                font-size: 2rem;
+                color: #f8755b;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+
+        .form-bottom {
+            color: #ffffff;
+            font-size: 2rem;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+    }
+}

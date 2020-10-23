@@ -1,0 +1,91 @@
+﻿body.invitation {
+    background-color: #b497af;
+    height: 100vh;
+    overflow: hidden;
+
+    .header {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    .form {
+        width: 100%;
+        height: auto;
+        background: url(../image/form-bk.png) no-repeat 0 0;
+        background-size: 100% 100%;
+        background-position: top;
+
+        .address {
+            color: #ffffff;
+            font-size: 1rem;
+            padding-left: 1.5rem;
+            padding-top: 1.5rem;
+            width: 70%;
+            margin: 0 auto;
+            line-height: 2;
+        }
+
+        .map {
+            width: 70%;
+            display: block;
+            margin: 1rem auto;
+            border-radius: 0.5rem;
+        }
+
+        .question {
+            color: #ffffff;
+            font-size: 1rem;
+            text-align: center;
+            width: 70%;
+            margin: 1rem auto 1rem;
+        }
+
+
+        .btns {
+            width: 70%;
+            margin: 0 auto;
+
+            .btn-ok {
+                display: block;
+                text-decoration: none;
+                background-color: #ffffff;
+                width: 45%;
+                margin: 0 auto;
+                height: 2rem;
+                line-height: 2rem;
+                border-radius: 0.5rem;
+                color: #e2553a;
+                text-align: center;
+            }
+
+            .btn-cancel {
+                display: block;
+                text-decoration: none;
+                border: 1px solid #ffffff;
+                width: 45%;
+                margin: 0 auto;
+                height: 2rem;
+                line-height: 2rem;
+                border-radius: 0.5rem;
+                color: #ffffff;
+                text-align: center;
+            }
+        }
+
+        .tip {
+            color: #ffffff;
+            font-size: 1rem;
+            margin: 1rem auto 1rem;
+
+            i {
+                display: block;
+                width: 2rem;
+                height: 2rem;
+                background: url(../image/12.png) no-repeat 0 0;
+                background-size: 100% auto;
+                background-position: bottom;
+            }
+        }
+    }
+}

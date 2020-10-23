@@ -65,7 +65,6 @@ body {
   /*background: url(../bk.jpg) 0 0 no-repeat;
   background-position: top;
   background-size: 100% auto;*/
-  background-color: #b497af;
   font-family: "站酷快乐体2016修订版";
   position: relative;
 }
@@ -173,40 +172,42 @@ body {
   background-color: #ed3f1d;
 }
 
-.header {
+body.index {
+  background-color: #b497af;
+}
+body.index .header {
   width: 100%;
   height: auto;
   margin: 0;
 }
-
-.form {
+body.index .form {
   width: 100%;
   height: auto;
   background: url(../image/form-bk.png) no-repeat 0 0;
   background-size: 100% 100%;
   background-position: top;
 }
-.form .label {
+body.index .form .label {
   color: #ffffff;
   font-size: 1rem;
   padding-left: 0.5rem;
 }
-.form .tip {
+body.index .form .tip {
   padding-top: 2rem;
   color: #ffffff;
   font-size: 1rem;
   padding-bottom: 1rem;
   text-align: center;
 }
-.form .input-group {
+body.index .form .input-group {
   width: 70%;
   margin: 0 auto;
   /*margin*/
 }
-.form .input-group .label {
+body.index .form .input-group .label {
   margin-bottom: 0.3rem;
 }
-.form .input-group input {
+body.index .form .input-group input {
   border: none;
   border-radius: 0.6rem;
   height: 2rem;
@@ -217,35 +218,35 @@ body {
   font-size: 1rem;
   color: #e2553a;
 }
-.form .select-group {
+body.index .form .select-group {
   width: 70%;
   margin: 0 auto;
   margin-top: 0.5rem;
 }
-.form .select-group .label {
+body.index .form .select-group .label {
   width: calc(20% - 0.5rem);
 }
-.form .select-group .select {
+body.index .form .select-group .select {
   width: 20%;
   margin-left: 3%;
 }
-.form .radio-group {
+body.index .form .radio-group {
   width: 70%;
   margin: 0 auto;
   margin-top: 0.8rem;
 }
-.form .radio-group .label {
+body.index .form .radio-group .label {
   width: calc(20% - 0.5rem);
 }
-.form .radio-group .radio {
+body.index .form .radio-group .radio {
   width: 20%;
   margin-left: 3%;
 }
-.form .btns {
+body.index .form .btns {
   padding-top: 1.2rem;
   padding-bottom: 3.2rem;
 }
-.form .btns .btn-submit {
+body.index .form .btns .btn-submit {
   display: block;
   text-decoration: none;
   background-color: #ffffff;
@@ -257,8 +258,7 @@ body {
   color: #e2553a;
   text-align: center;
 }
-
-.bk-cover {
+body.index .bk-cover {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -268,8 +268,7 @@ body {
   z-index: 10;
   display: none;
 }
-
-.modal {
+body.index .modal {
   position: absolute;
   top: 30%;
   width: 70%;
@@ -277,7 +276,7 @@ body {
   z-index: 11;
   display: none;
 }
-.modal .modal-content {
+body.index .modal .modal-content {
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 1rem;
   text-align: center;
@@ -287,7 +286,7 @@ body {
   font-size: 1rem;
   line-height: 2;
 }
-.modal .btn-modal {
+body.index .modal .btn-modal {
   background-color: #ff0000;
   width: 1.5rem;
   height: 1.5rem;
@@ -297,7 +296,7 @@ body {
   border-radius: 50%;
   cursor: pointer;
 }
-.modal .btn-modal:before {
+body.index .modal .btn-modal:before {
   content: "";
   position: absolute;
   display: block;
@@ -309,7 +308,7 @@ body {
   background-color: #ffffff;
   z-index: 12;
 }
-.modal .btn-modal:after {
+body.index .modal .btn-modal:after {
   content: "";
   position: absolute;
   display: block;
@@ -320,6 +319,257 @@ body {
   transform: rotate(-45deg);
   background-color: #ffffff;
   z-index: 12;
+}
+
+body.character {
+  background: url(../image/bk-character.jpg) no-repeat 0 0;
+  background-position: center;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+body.character .header {
+  width: 100%;
+}
+body.character .header .slogan {
+  width: 28%;
+  margin-left: 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+body.character .header .logo {
+  width: 17%;
+  margin-right: 2rem;
+}
+body.character .form {
+  width: 100%;
+  text-align: center;
+  background: url(../image/form-bk-character.png) no-repeat 0 0;
+  background-position: center;
+  background-size: 100% 100%;
+}
+body.character .form img {
+  width: 60%;
+  height: auto;
+  border-radius: 1rem;
+  display: block;
+  margin: 0 auto;
+}
+body.character .form .form-top {
+  color: #ffffff;
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+body.character .form .image {
+  position: relative;
+}
+body.character .form .image .name {
+  position: absolute;
+  bottom: 1rem;
+  font-size: 2rem;
+  color: #f8755b;
+  left: 50%;
+  transform: translateX(-50%);
+}
+body.character .form .form-bottom {
+  color: #ffffff;
+  font-size: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+body.invitation {
+  background-color: #b497af;
+  height: 100vh;
+  overflow: hidden;
+}
+body.invitation .header {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+body.invitation .form {
+  width: 100%;
+  height: auto;
+  background: url(../image/form-bk.png) no-repeat 0 0;
+  background-size: 100% 100%;
+  background-position: top;
+}
+body.invitation .form .address {
+  color: #ffffff;
+  font-size: 1rem;
+  padding-left: 1.5rem;
+  padding-top: 1.5rem;
+  width: 70%;
+  margin: 0 auto;
+  line-height: 2;
+}
+body.invitation .form .map {
+  width: 70%;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 0.5rem;
+}
+body.invitation .form .question {
+  color: #ffffff;
+  font-size: 1rem;
+  text-align: center;
+  width: 70%;
+  margin: 1rem auto 1rem;
+}
+body.invitation .form .btns {
+  width: 70%;
+  margin: 0 auto;
+}
+body.invitation .form .btns .btn-ok {
+  display: block;
+  text-decoration: none;
+  background-color: #ffffff;
+  width: 45%;
+  margin: 0 auto;
+  height: 2rem;
+  line-height: 2rem;
+  border-radius: 0.5rem;
+  color: #e2553a;
+  text-align: center;
+}
+body.invitation .form .btns .btn-cancel {
+  display: block;
+  text-decoration: none;
+  border: 1px solid #ffffff;
+  width: 45%;
+  margin: 0 auto;
+  height: 2rem;
+  line-height: 2rem;
+  border-radius: 0.5rem;
+  color: #ffffff;
+  text-align: center;
+}
+body.invitation .form .tip {
+  color: #ffffff;
+  font-size: 1rem;
+  margin: 1rem auto 1rem;
+}
+body.invitation .form .tip i {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  background: url(../image/12.png) no-repeat 0 0;
+  background-size: 100% auto;
+  background-position: bottom;
+}
+
+body.game {
+  background-color: #b497af;
+  height: 100vh;
+  overflow: hidden;
+}
+body.game .header {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+body.game .header img {
+  width: 17%;
+  margin-right: 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+body.game .form {
+  width: 100%;
+  height: auto;
+  background: url(../image/game-bk.png) no-repeat 0 0;
+  background-size: 100% auto;
+  background-position: bottom;
+}
+body.game .form .title {
+  color: #ffffff;
+  font-size: 2rem;
+  padding-left: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+}
+body.game .form .image {
+  border: 1.5px solid #f8755b;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+body.game .form .image img {
+  width: 100%;
+  height: auto;
+}
+body.game .form .image .puzzle {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 0;
+}
+body.game .form .image .puzzle .piece {
+  height: calc(100% / 3 - 1px * 2);
+  text-align: center;
+  border: 1px solid #f8755b;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f8755b;
+  font-size: 2rem;
+}
+body.game .form .image .puzzle .piece.out {
+  opacity: 0;
+  animation: zoomOut 1s 1 ease;
+}
+@-webkit-keyframes zoomOut {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: rotateY(90deg);
+    transform: rotateY(90deg);
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes zoomOut {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: rotateY(90deg);
+    transform: rotateY(90deg);
+  }
+  to {
+    opacity: 0;
+  }
+}
+body.game .form .btns {
+  padding-bottom: 3.2rem;
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+body.game .form .btns .btn-scan {
+  display: block;
+  text-decoration: none;
+  background-color: #ffffff;
+  width: 45%;
+  margin: 0 auto;
+  height: 2rem;
+  line-height: 2rem;
+  border-radius: 0.5rem;
+  color: #f8755b;
+  text-align: center;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=css.css.map */
